@@ -4,4 +4,4 @@ final_tutorial.dmp: tutorial.elf
 tutorial.elf: tutorial.c lscript bootstrap.s
 	riscv64-unknown-elf-gcc -O3 -Wall -nostdlib -march=rv32imav -mabi=ilp32 -T lscript bootstrap.s tutorial.c function.h fact.s -o tutorial.elf
 clean:
-	rm tutorial.elf final_tutorial.dmp
+	rm tutorial.elf final_tutorial.dmp testshex.txt
